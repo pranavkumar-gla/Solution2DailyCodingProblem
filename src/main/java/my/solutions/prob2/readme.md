@@ -9,3 +9,6 @@ TO DO:
 1. Get in-depth of reduce function in java8
 2. better iterate over list/array with lamda expression.
  
+Reference:
+https://docs.oracle.com/javase/tutorial/collections/streams/reduction.html#reduce
+ 
