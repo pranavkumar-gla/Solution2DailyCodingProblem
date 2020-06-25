@@ -2,6 +2,7 @@ package my.solutions.prob2
 
 import org.junit.Before
 import org.junit.Test
+import static org.junit.Assert.assertArrayEquals;
 
 class Solution2Problem2Test{
 
@@ -15,10 +16,13 @@ class Solution2Problem2Test{
     void "The test must return true with valid list"(){
         def numbers = [1, 2, 3, 4, 5] as int[]
         println(numbers)
-        def productList = new int[numbers.length]
 
+        //below 3 lines can be removed
+        def productList = new int[numbers.length]
         productList = solution2Problem2.getProduct(numbers)
         println(productList)
+
+        assertArrayEquals([120, 60, 40, 30, 24] as int[], solution2Problem2.getProduct(numbers))
     }
 
 
