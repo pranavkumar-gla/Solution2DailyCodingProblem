@@ -25,6 +25,13 @@ class Solution2Problem2Test{
         assertArrayEquals([120, 60, 40, 30, 24] as int[], solution2Problem2.getProduct(numbers))
     }
 
+    @Test (expected = ArithmeticException.class)
+    void "The method throws an exception if the digit overflow int"(){
+        def numbers = [1, 2, 3, 4, 5955146588160L ] as int[]
+        println(numbers)
 
-
+        //below 3 lines can be removed
+        solution2Problem2.getProduct(numbers)
     }
+
+}
